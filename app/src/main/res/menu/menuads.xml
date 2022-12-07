@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <item  android:id="@+id/adsmemberlist"
+        android:title="Members List"/> -->
+    <item  android:id="@+id/adsloan"
+        android:title="loan"/>
+    <item android:id="@+id/adsreport"
+        android:title="Report"/>
+    <item android:id="@+id/adsexpense"
+        android:title="Expense"/>
+    <item android:id="@+id/adsjobalert"
+        android:title="Job Alert"/>
+    <item
+        android:id="@+id/adslogout"
+        android:title="Logout"
+        />
+
+</menu>

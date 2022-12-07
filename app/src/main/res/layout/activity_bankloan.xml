@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Bankloan">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CardView.Dark">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple"
+            app:title="      Bank Loan"
+            app:popupTheme="@color/white" />
+        <TextView
+            android:id="@+id/bback"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/contextmain" />
+
+
+
+
+</LinearLayout>

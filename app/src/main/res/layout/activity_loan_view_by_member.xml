@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LoanViewByMember">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        app:title="      Loan"/>
+
+    <ImageView
+        android:id="@+id/loanback"
+        android:layout_marginTop="-50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/ld"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="loan details"
+            android:textStyle="bold"
+            android:background="@drawable/loan"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/pd"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="payment info"
+            android:textStyle="bold"
+            android:background="@drawable/loan"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+

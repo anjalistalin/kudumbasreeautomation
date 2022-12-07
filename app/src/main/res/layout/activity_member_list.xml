@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MemberList">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        app:title="      Member List"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:id="@+id/memberlistback"
+        android:layout_marginTop="-50dp"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Kudumbasree Id"
+       android:id="@+id/kid"
+       android:textColor="@color/black"
+       app:layout_constraintTop_toBottomOf="@id/toolbr"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/find"
+        android:text="Find"
+        android:background="@color/purple"
+        app:layout_constraintTop_toBottomOf="@id/kid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="50dp"
+        android:id="@+id/memberlistrecycle"
+        tools:listitem="@layout/memberitem"
+        android:layout_width="match_parent"
+       tools:itemCount="6"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/find"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/addimg"
+            android:layout_marginLeft="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_person_add_24" />
+        <Button
+            android:id="@+id/addmember"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="add member"
+            android:textColor="@color/white"
+            android:background="@color/purple"/>
+        <Button
+
+            android:layout_marginLeft="50dp"
+            android:id="@+id/request"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="request list "
+            android:textColor="@color/white"
+            android:background="@color/purple"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_send_24"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

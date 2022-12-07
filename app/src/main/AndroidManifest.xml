@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kudumbasree">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KUDUMBASREE"
+        tools:targetApi="31">
+        <activity
+            android:name=".Requestloan"
+            android:exported="false" />
+        <activity
+            android:name=".Notificationxmljava"
+            android:exported="false" />
+        <activity
+            android:name=".MemberList"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".RequestList"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".BorrowersList"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ApplyLoan"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ReportAdsview"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ViewReportADS"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Loanlist"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".JobAlertPresident"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ViewReportPresident"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".CompossLoan"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".RegistrationForMember"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Loanpayment"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ListAttendance"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".recyclerviewattendance"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".REquestListForADS"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ExpenseViewBYADS"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoanForADS"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".UnitDetailsForADS"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MeberListForads"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".PaymentInfo"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoanDetails"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".jobalertm"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LogOutm"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ReportByMem"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MemFFound"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MListForMember"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".FestivalFound"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LogOut"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".JobAlert"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Loan"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoginPageForUnitMember"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ADSHomescreen"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ExpenseViewByMember"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoanViewByMember"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".UnitMemberList"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".JoinRequest"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Reportsubmission"
+            android:exported="false" />
+        <activity
+            android:name=".Viewexpense"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Bankloanpayment"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Bankloan"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Expense"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".AddMember"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".atviewbymem"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".viewattendance"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".JoinKudumbasree"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".markatt"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".homescreenmember"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".memlogin"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".registrationpage"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".forgtpage"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".homescreenpresident"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".AdsLogin"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".splashactivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

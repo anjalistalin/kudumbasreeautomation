@@ -1,0 +1,65 @@
+package com.example.kudumbasree;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+
+public class Notificationxmljava extends AppCompatActivity {
+    ImageView Notificationback;
+    RecyclerView recyclerView;
+    DatabaseReference databaseReference;
+    NotifyAdapter myAdapternotify;
+    ArrayList<NotifyModelClass> list;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        Notificationback=findViewById(R.id.notificationback);
+        setContentView(R.layout.activity_notificationxmljava);
+        recyclerView = findViewById(R.id.notifyrecycler);
+        databaseReference = FirebaseDatabase.getInstance().getReference("MeetingDetails");
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        list = new ArrayList<>();
+
+        myAdapternotify = new NotifyAdapter(this, list);
+        recyclerView.setAdapter(myAdapternotify);
+
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+
+                    NotifyModelClass notifyModelClass = dataSnapshot.getValue(NotifyModelClass.class);
+                    list.add(notifyModelClass);
+                }
+
+                myAdapternotify.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+        }
+    }

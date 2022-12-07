@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1062784688631",
+    "firebase_url": "https://kudumbasree-581e9-default-rtdb.firebaseio.com",
+    "project_id": "kudumbasree-581e9",
+    "storage_bucket": "kudumbasree-581e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062784688631:android:2364f71f3c6eda6936cef2",
+        "android_client_info": {
+          "package_name": "com.example.kudumbasree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062784688631-oblau78po9jaj5bq8rs26a7m8500dlh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0IDzNhmU_ErFsD52DrlDjmZ00rj1cAM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062784688631-oblau78po9jaj5bq8rs26a7m8500dlh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
